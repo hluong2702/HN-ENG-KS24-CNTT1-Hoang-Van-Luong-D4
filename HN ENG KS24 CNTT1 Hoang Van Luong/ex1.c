@@ -126,7 +126,7 @@ Food nextDouble(Node *head) {
 void searchFood(Node *head, char* name) {
     Node *current = head;
     while (current != NULL) {
-        if (strstr(current->next->food.foodName,name) != NULL) {
+        if (strstr(current->food.foodName,name) != NULL) {
             printf("%d ", current->next->food.id);
             printf("%s ", current->next->food.foodName);
             printf("%s ", current->next->food.foodCategory);
